@@ -39,7 +39,7 @@ export interface BucketListProps {
 export function BucketList({ sectionId = "horizon" }: BucketListProps) {
   return (
     <section id={sectionId}>
-      <div className="mx-auto max-w-7xl px-6 md:px-20">
+      <div className="mx-auto max-w-7xl px-6 md:px-20 mb-20">
         <div className="mb-18 md:mb-32 flex items-center gap-4 w-full justify-center">
           <div className="w-8 h-[1px] bg-white/20" />
 
