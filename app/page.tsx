@@ -6,9 +6,8 @@ import { showcaseDriveItems } from "@/features/travel/data/showcase";
 import { travels } from "@/features/travel/data/travels";
 
 export const metadata: Metadata = {
-  title: "Home",
   description:
-    "Travel photography and notes — add your own sections and components in the App Router.",
+    "Travel photography and notes — places, photos, and stories from the road.",
 };
 
 export default function HomePage() {

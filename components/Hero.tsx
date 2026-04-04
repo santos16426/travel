@@ -73,7 +73,7 @@ export function Hero() {
             transition={{ duration: 1.2, ease: [0.19, 1, 0.22, 1] }}
             className="text-[12vw] font-black leading-[0.85] tracking-tighter md:text-[8vw]"
           >
-            Travel with me
+            Where&apos;s Lucas?
           </motion.h1>
         </div>
 

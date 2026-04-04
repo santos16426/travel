@@ -3,7 +3,7 @@ function getSiteUrl(): string {
 }
 
 export const siteConfig = {
-  name: "Travel Portfolio",
+  name: "Where's Lucas?",
   description:
     "A personal travel journal: places visited, photos, and stories from the road.",
   locale: "en",
