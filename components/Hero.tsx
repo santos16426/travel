@@ -5,7 +5,7 @@ import {
   heroBackgroundDriveFileId,
 } from "@/lib/images/google-drive";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Activity, ArrowDown, Camera, MapPin } from "lucide-react";
+import { ArrowDown, Camera, MapPin } from "lucide-react";
 import Image from "next/image";
 import { useRef, useState } from "react";
 
@@ -61,9 +61,11 @@ export function Hero() {
           className="mb-8 flex items-center justify-center gap-3"
         >
           {/* <MapPin size={12} className="text-white/40" /> */}
-          <span className="text-[10px] font-bold uppercase tracking-[0.6em] text-white/50 italic tracking-tight">
-            Carpe diem
+          <div className="w-8 h-[1px] bg-white/20" />
+          <span className="text-[10px] font-bold uppercase tracking-[0.6em] text-white/50">
+            Carpe Diem
           </span>
+          <div className="w-8 h-[1px] bg-white/20" />
         </motion.div>
 
         <div className="relative inline-block">
@@ -83,7 +85,7 @@ export function Hero() {
           transition={{ delay: 0.8, duration: 1.5 }}
           className="mt-12 flex flex-col items-center gap-12"
         >
-          <p className="max-w-md text-sm font-light leading-relaxed tracking-tight text-white/60 md:text-lg">
+          <p className="max-w-md text-sm md:text-lg font-light text-white/50 leading-relaxed tracking-tight uppercase">
             Not the destinations—just everything in between. Where I go when I’m
             offline.
           </p>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BucketList } from "@/components/BucketList";
 import { FeaturedGallery } from "@/components/FeaturedGallery";
 import { Hero } from "@/components/Hero";
 import { Travels } from "@/components/Travels";
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Hero />
       <FeaturedGallery items={showcaseDriveItems} />
       <Travels items={travels} />
+      <BucketList />
     </main>
   );
 }
