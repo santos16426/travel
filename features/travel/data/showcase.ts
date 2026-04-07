@@ -32,7 +32,7 @@ export const showcaseDriveItems: DriveShowcaseItem[] = [
   { id:19, fileId: "1Rg3uNVcYyyrIi9QbeXeQ92QNcoDqCgcW", kind: "image" },
   { id:20, fileId: "1eNrGhK0gBNyF_LfhYP_TH_BZIMo_vY8V", kind: "image" },
   { id:21, fileId: "10F09zs9tc6b4JUMmdilY2WGRko6UtHIR", kind: "image" },
-  { id:22, fileId: "11tuwMWok_HBlshF6tZhE5MXutaHdLrbg", kind: "image" }
+  // { id:22, fileId: "11tuwMWok_HBlshF6tZhE5MXutaHdLrbg", kind: "image" }
   // { id:21, fileId: "1X4O_C0IIfoTHVUa7l-3rMEraOjm-RV5G", kind: "video" },
 
 ];
