@@ -16,6 +16,14 @@ export interface TravelsProps {
   items: Travel[];
 }
 
+const easeOutLightbox = [0.22, 1, 0.36, 1] as const;
+const springLightboxMedia = {
+  type: "spring" as const,
+  damping: 32,
+  stiffness: 320,
+  mass: 0.85,
+};
+
 function expeditionCodeFromId(id: string): string {
   const segment = id.split("-")[1];
   return segment ?? id;
@@ -108,7 +116,7 @@ function ExpeditionFullMedia({ item }: { item: DriveShowcaseItem }) {
   );
 }
 
-function ExpeditionLightbox({
+function ExpeditionLightboxPanel({
   item,
   onClose,
 }: {
@@ -131,31 +139,14 @@ function ExpeditionLightbox({
     };
   }, []);
 
-  const easeOut = [0.22, 1, 0.36, 1] as const;
-  const springMedia = {
-    type: "spring" as const,
-    damping: 32,
-    stiffness: 320,
-    mass: 0.85,
-  };
-
   return (
-    <motion.div
-      role="dialog"
-      aria-modal="true"
-      aria-label="Expedition media"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.4, ease: easeOut }}
-      className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-black/95 p-4 backdrop-blur-xl md:p-12"
-    >
+    <>
       <motion.button
         type="button"
         initial={{ opacity: 0, scale: 0.85 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.9 }}
-        transition={{ duration: 0.35, ease: easeOut, delay: 0.12 }}
+        transition={{ duration: 0.35, ease: easeOutLightbox, delay: 0.12 }}
         onClick={onClose}
         className="absolute top-6 right-6 z-[210] flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-all hover:bg-white hover:text-black md:top-10 md:right-10"
       >
@@ -169,7 +160,7 @@ function ExpeditionLightbox({
           initial={{ opacity: 0, scale: 0.94, y: 16 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.97, y: 8 }}
-          transition={{ ...springMedia, delay: 0.04 }}
+          transition={{ ...springLightboxMedia, delay: 0.04 }}
         >
           <ExpeditionFullMedia item={item} />
         </motion.div>
@@ -181,7 +172,7 @@ function ExpeditionLightbox({
             exit={{ opacity: 0, y: 12 }}
             transition={{
               duration: 0.45,
-              ease: easeOut,
+              ease: easeOutLightbox,
               delay: 0.14,
             }}
             className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/80 to-transparent px-6 pt-32 pb-12 text-center"
@@ -192,7 +183,7 @@ function ExpeditionLightbox({
           </motion.div>
         ) : null}
       </div>
-    </motion.div>
+    </>
   );
 }
 
@@ -358,13 +349,24 @@ export function Travels({ items }: TravelsProps) {
         />
       ))}
 
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {selectedMedia ? (
-          <ExpeditionLightbox
-            key={selectedMedia.fileId}
-            item={selectedMedia}
-            onClose={handleClose}
-          />
+          <motion.div
+            key={`${selectedMedia.fileId}-${selectedMedia.id}`}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Expedition media"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.4, ease: easeOutLightbox }}
+            className="fixed inset-0 z-[200] flex flex-col items-center justify-center bg-black/95 p-4 backdrop-blur-xl md:p-12"
+          >
+            <ExpeditionLightboxPanel
+              item={selectedMedia}
+              onClose={handleClose}
+            />
+          </motion.div>
         ) : null}
       </AnimatePresence>
     </div>

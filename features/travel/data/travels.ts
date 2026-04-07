@@ -63,52 +63,52 @@ export const travels: Travel[] = [
       },
     ],
   },
-  {
-    id: 6,
-    title: "Discovering Pampanga & Subic",
-    location: "Pampanga x Subic",
-    date: "January 2026",
-    description:
-    "A weekend with my partner—good food, local culture, and slow moments.",
-    items: [
-      {
-        id: 1,
-        fileId: "143qg9ERLz1SgQ-SQHXnIULWkTlTYQ1jI",
-        kind: "image",
-        caption: "Altar of the sunken church @Shrine of Our Lady of Lourdes in Cabetican"
-      },
-      {
-        id: 6,
-        fileId: "1cZy0Cj8vkfQ1O1xYsldQQmxE1kD__d13",
-        kind: "image",
-        caption: "Shrine of Our Lady of Lourdes in Cabetican"
-      },
-      {
-        id: 2,
-        fileId: "1QgqNXKwQ1CTED_NNtyV6kKngGw4jP46u",
-        kind: "image",
-        caption: "Fireworks display @Pier One Subic"
-      },
-      {
-        id: 4,
-        fileId: "1ZvllQJ-gOIPkWjLNFcxa1hSPuUgcTHlT",
-        kind: "image",
-        caption: "Matching yogurts 🍯"
-      },
-      {
-        id: 3,
-        fileId: "1Ak_HGUap9Qg89f6tmJ9Wg-oYBZOsurWj",
-        kind: "image",
-        caption: "A scenic view of the Subic Bay from the pier"
-      },
-      {
-        id: 5,
-        fileId: "1D7XviC9lC-4imumBHhJXZKQ76Kma2J24",
-        kind: "image",
-        caption: "Selfie with Jesus and Mama Mary"
-      },
-    ]
-  },
+  // {
+  //   id: 6,
+  //   title: "Discovering Pampanga & Subic",
+  //   location: "Pampanga x Subic",
+  //   date: "January 2026",
+  //   description:
+  //   "A weekend with my partner—good food, local culture, and slow moments.",
+  //   items: [
+  //     {
+  //       id: 1,
+  //       fileId: "143qg9ERLz1SgQ-SQHXnIULWkTlTYQ1jI",
+  //       kind: "image",
+  //       caption: "Altar of the sunken church @Shrine of Our Lady of Lourdes in Cabetican"
+  //     },
+  //     {
+  //       id: 6,
+  //       fileId: "1cZy0Cj8vkfQ1O1xYsldQQmxE1kD__d13",
+  //       kind: "image",
+  //       caption: "Shrine of Our Lady of Lourdes in Cabetican"
+  //     },
+  //     {
+  //       id: 2,
+  //       fileId: "1QgqNXKwQ1CTED_NNtyV6kKngGw4jP46u",
+  //       kind: "image",
+  //       caption: "Fireworks display @Pier One Subic"
+  //     },
+  //     {
+  //       id: 4,
+  //       fileId: "1ZvllQJ-gOIPkWjLNFcxa1hSPuUgcTHlT",
+  //       kind: "image",
+  //       caption: "Matching yogurts 🍯"
+  //     },
+  //     {
+  //       id: 3,
+  //       fileId: "1Ak_HGUap9Qg89f6tmJ9Wg-oYBZOsurWj",
+  //       kind: "image",
+  //       caption: "A scenic view of the Subic Bay from the pier"
+  //     },
+  //     {
+  //       id: 5,
+  //       fileId: "1D7XviC9lC-4imumBHhJXZKQ76Kma2J24",
+  //       kind: "image",
+  //       caption: "Selfie with Jesus and Mama Mary"
+  //     },
+  //   ]
+  // },
   {
     id: 5,
     title: "AUH x Dubai 🔥",
@@ -190,53 +190,53 @@ export const travels: Travel[] = [
       }
     ],
   },
-  {
-    id: 4,
-    title: "Quick Mindoro Getaway",
-    description: "A week-long getaway with my girlfriend, discovering the raw beauty of Mindoro.",
-    location: "Mindoro",
-    date: "December 2025",
-    items: [
+  // {
+  //   id: 4,
+  //   title: "Quick Mindoro Getaway",
+  //   description: "A week-long getaway with my girlfriend, discovering the raw beauty of Mindoro.",
+  //   location: "Mindoro",
+  //   date: "December 2025",
+  //   items: [
 
-      {
-        id: 2,
-        fileId: "1DivstaH8y5TxKOJjZmD1Thze6vHdT2PD",
-        kind: "image",
-        caption: "What a view with my beautiful girlfriend"
-      },
-      {
-        id: 3,
-        fileId: "1mnEcDkB0Y3jP89GOP9EMH9YLypua5mQT",
-        kind: "image",
-        caption: "Mandatory selfie!"
-      },
-      {
-        id: 4,
-        fileId: "11tuwMWok_HBlshF6tZhE5MXutaHdLrbg",
-        kind: "image",
-        caption: "Capturing the beauty of Mindoro"
-      },
-      {
-        id: 1,
-        fileId: "1gDzOc12wtM8g40aGneAEj9nIyJpIuxc8",
-        kind: "image",
-        caption: "We watched the sunrise unfold by the beach."
+  //     {
+  //       id: 2,
+  //       fileId: "1DivstaH8y5TxKOJjZmD1Thze6vHdT2PD",
+  //       kind: "image",
+  //       caption: "What a view with my beautiful girlfriend"
+  //     },
+  //     {
+  //       id: 3,
+  //       fileId: "1mnEcDkB0Y3jP89GOP9EMH9YLypua5mQT",
+  //       kind: "image",
+  //       caption: "Mandatory selfie!"
+  //     },
+  //     {
+  //       id: 4,
+  //       fileId: "11tuwMWok_HBlshF6tZhE5MXutaHdLrbg",
+  //       kind: "image",
+  //       caption: "Capturing the beauty of Mindoro"
+  //     },
+  //     {
+  //       id: 1,
+  //       fileId: "1gDzOc12wtM8g40aGneAEj9nIyJpIuxc8",
+  //       kind: "image",
+  //       caption: "We watched the sunrise unfold by the beach."
 
-      },
-      {
-        id: 5,
-        fileId: "1PZ6VsBIUTQtFDi5rm2wpNPzl48KM1qzM",
-        kind: "image",
-        caption: "Family bonding time!"
-      },
-      {
-        id: 6,
-        fileId: "1IzEzrbBRwDpY53TTccxDgUhM9dkkaChc",
-        kind: "image",
-        caption: "Selfie after a long day of exploring! P.S. Di masarap yung food lol"
-      }
-    ]
-  },
+  //     },
+  //     {
+  //       id: 5,
+  //       fileId: "1PZ6VsBIUTQtFDi5rm2wpNPzl48KM1qzM",
+  //       kind: "image",
+  //       caption: "Family bonding time!"
+  //     },
+  //     {
+  //       id: 6,
+  //       fileId: "1IzEzrbBRwDpY53TTccxDgUhM9dkkaChc",
+  //       kind: "image",
+  //       caption: "Selfie after a long day of exploring! P.S. Di masarap yung food lol"
+  //     }
+  //   ]
+  // },
   {
     id: 3,
     title: "Siquijor x Cebu Trip",
