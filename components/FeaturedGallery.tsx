@@ -57,6 +57,7 @@ function DriveGifImg({
     <img
       src={sources[index]}
       alt=""
+      loading="eager"
       className={className}
       onError={() => {
         setIndex((i) => (i < sources.length - 1 ? i + 1 : i));
@@ -72,10 +73,11 @@ function ShowcaseFullMedia({ item }: { item: DriveShowcaseItem }) {
     return (
       <iframe
         title=""
-        src={googleDriveFileEmbedPreviewUrl(fileId)}
+        src={`${googleDriveFileEmbedPreviewUrl(fileId)}?autoplay=1&mute=1`}
         className="aspect-video h-auto max-h-[80vh] w-full max-w-5xl rounded-lg border-0"
         allow="autoplay; fullscreen; picture-in-picture; encrypted-media; muted:true "
         allowFullScreen
+        loading="eager"
       />
     );
   }
@@ -270,6 +272,7 @@ function ShowcaseTile({
       {kind === "image" ? (
         <div className="relative h-full w-full">
           <Image
+            loading="eager"
             src={googleDriveThumbnailUrl(fileId, 900)}
             alt=""
             fill

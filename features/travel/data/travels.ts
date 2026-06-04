@@ -5,6 +5,133 @@ import type { Travel } from "@/features/travel/types";
  */
 export const travels: Travel[] = [
   {
+    id: 10,
+    title: "San Miguel Trilogy Hike",
+    location: "San Miguel, Bulacan",
+    date: "June 2026",
+    description:
+    "Trilogy hike with my friends -- climbing, cliff-jumping, and having fun.",
+    items: [
+      {
+        id: 1,
+        fileId: "1JjshwP4fBP5mj7m5jkSSQ-QdUsuS0z1M",
+        kind: "image",
+      },
+      {
+        id: 2,
+        fileId: "17-uQIbk_lRGs26PBlC5z6SKXrzK67kt0",
+        kind: "image",
+      },
+      {
+        id: 3,
+        fileId: "16D0dJGattNo03XIrcyh4n6degYDIw-i7",
+        kind: "image",
+      },
+      {
+        id: 4,
+        fileId: "1HOMYkmomOG8v77tCHrBwDumJxA3-6oAE",
+        kind: "image",
+      },
+      {
+        id: 5,
+        fileId: "1P7NJPrPXWkUaga4tj3KNJ2Z28vPH5jp4",
+        kind: "image",
+      },
+      {
+        id: 6,
+        fileId: "1W51j8zhrlzkDWj87zauTkpN1I5mmZWX8",
+        kind: "image",
+      },
+
+    ]
+  },
+  {
+    id: 9,
+    title: "Fun Dive! ",
+    location: "Anilao, Batangas",
+    date: "May 2026",
+    description:
+    "Second dive! Where each second stretches into eternity",
+    items: [
+      {
+        id: 1,
+        fileId: "1jE6T6jJmnvkEd9phovW5ps1nxM6aBffJ",
+        kind: "image",
+      },
+      {
+        id: 3,
+        fileId: "1yyNFHkQiWHjwS3K79W4g6cj1t9e4Ufo0",
+        kind: "image",
+      },
+      {
+        id: 2,
+        fileId: "1wBMZrlJiao8VXQ0vLoKJPKTIPRK0UB2U",
+        kind: "image",
+      },
+      {
+        id: 4,
+        fileId: "1oeDU4sOKPuMF5TTuZ4gtsmEKXFr2swEk",
+        kind: "video",
+      },
+      {
+        id: 5,
+        fileId: "1_m5OC6BYnw5GdNaqPkBTInZziBDeq9XA",
+        kind: "video",
+      },
+
+    ]
+  },
+  {
+    id: 8,
+    title: "Taiwan with Budol Friends",
+    location: "Taipei, Taiwan",
+    date: "April 2026",
+    description:
+    "A weekend with my budol friends -- eating, drinking, and having fun.",
+    items: [
+      {
+        id: 1,
+        fileId: "1hG3f-oqngOHBlxzov2kqBfGuu4Of7YKw",
+        kind: "image",
+      },
+      {
+        id: 2,
+        fileId: "1kggXZBhQC76_ctjMY_BOhOc9BXNcOfjL",
+        kind: "image",
+      },
+      {
+        id: 3,
+        fileId: "1K8ddMDc7YHT_aM3U2d7E7zvqww0HCcAc",
+        kind: "image",
+      },
+      {
+        id: 4,
+        fileId: "1PZgWVKDQC2PywE17Ogv9JNoLrTdcblR8",
+        kind: "image",
+      },
+      {
+        id: 5,
+        fileId: "1sLwYIHDIMMoYS_n96IsjiVsuv1za5pbJ",
+        kind: "image",
+      },
+      {
+        id: 6,
+        fileId: "12iSekRYTfC92yAXUI_EJzuTzavygcXSV",
+        kind: "image",
+      },
+      {
+        id: 7,
+        fileId: "166_p5fbKlu72wzBMJ0Rv0zmNwh5uyBNx",
+        kind: "image",
+      },
+      {
+        id: 8,
+        fileId: "1cM6i2QAIs31IYUlDS-8sqdkxHnsN3ILC",
+        kind: "image",
+      }
+    ]
+  },
+  {
     id: 7,
     title: "Anilao Free Dive",
     location: "Anilao, Batangas",
